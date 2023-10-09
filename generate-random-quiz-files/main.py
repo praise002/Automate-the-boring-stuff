@@ -5,7 +5,7 @@ from dict import capitals
 def generate_random_quiz_files():
     # Create a directory to store quiz and answer key files
     if not os.path.exists('quizzes'):
-        os.makedir('quizzes/')
+        os.mkdir('quizzes/')
     if not os.path.exists('quizzes/questions'):
         os.makedirs('quizzes/questions')
     if not os.path.exists('quizzes/answers'):
@@ -59,4 +59,6 @@ def generate_random_quiz_files():
 
 if __name__ == '__main__':
     generate_random_quiz_files()
+    
+# TODO: Implement using json
     
